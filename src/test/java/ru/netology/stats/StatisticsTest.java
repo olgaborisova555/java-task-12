@@ -48,7 +48,7 @@ public class StatisticsTest {
     void StatisticsMax() {
         // подготавливаем данные:
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        float expected = 15;
+        float expected = 20;
         Statistics service = new Statistics();
 
         // вызывыемый метод:
@@ -61,7 +61,7 @@ public class StatisticsTest {
     void StatisticsAboveMean() {
         // подготавливаем данные:
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        float expected = 15;
+        float expected = 5;
         Statistics service = new Statistics();
 
         // вызывыемый метод:
@@ -74,7 +74,7 @@ public class StatisticsTest {
     void StatisticsBelowMean() {
         // подготавливаем данные:
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        float expected = 15;
+        float expected = 5;
         Statistics service = new Statistics();
 
         // вызывыемый метод:
