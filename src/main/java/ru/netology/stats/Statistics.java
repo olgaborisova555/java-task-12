@@ -19,7 +19,7 @@ public class Statistics {
         int min = data[0];
         int month = 1;
         for (int i = 1; i < data.length; i++) {
-            if (data[i] < min) {
+            if (data[i] <= min) {
                 min = data[i];
                 month = i + 1;
             }
@@ -30,13 +30,13 @@ public class Statistics {
     public int calculateMax(int[] data) {
         int max = data[0];
         int month = 1;
-        for (int i = 1; i > data.length; i++) {
-            if (data[i] > max) {
+        for (int i = 1; i < data.length; i++) {
+            if (data[i] >= max) {
                 max = data[i];
                 month = i + 1;
             }
         }
-        return max;
+        return month;
     }
 
     public int calculateAboveMean(int[] data) {
